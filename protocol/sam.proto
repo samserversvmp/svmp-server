@@ -1,4 +1,4 @@
-// svmp.proto
+// sam.proto
 // Client to Proxy Server protocol
 
 // Copyright (c) 2012-2014, The MITRE Corporation, All Rights Reserved.
@@ -12,11 +12,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package svmp;
+package sam;
 
 option optimize_for = LITE_RUNTIME;
-option java_package = "org.mitre.svmp.protocol";
-option java_outer_classname = "SVMPProtocol";
+option java_package = "org.mitre.sam.protocol";
+option java_outer_classname = "samProtocol";
 
 // Client to server message wrapper
 message Request
@@ -389,8 +389,8 @@ message AppsResponse {
 
 // C<->S
 message AppInfo {
-  required string pkgName = 1; // primary key, ex: org.mitre.svmp.client
-  required string appName = 2; // user-friendly name, ex: SVMP Client
+  required string pkgName = 1; // primary key, ex: org.mitre.sam.client
+  required string appName = 2; // user-friendly name, ex: sam Client
   optional bytes icon     = 3; // null in Request
   optional bytes iconHash = 4; // null in Response
 }
