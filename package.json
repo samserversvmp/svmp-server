@@ -33,7 +33,7 @@
     "protobufjs": "~2.0.5",
     "q": "~1.0.1",
     "revalidator": "^0.2.0",
-    "sam-overseer-client": "git+https://github.com/sam/sam-overseer-client.git#sam-2.0.0",
+    "svmp-overseer-client": "git+https://github.com/svmp/svmp-overseer-client.git#svmp-2.0.0",
     "to-date": "latest",
     "winston": "~0.7.3",
     "ws": "^0.4.32"
